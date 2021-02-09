@@ -5,7 +5,7 @@ import '../common.dart';
 
 class GridExample extends StatelessWidget {
   const GridExample({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -24,8 +24,8 @@ class GridExample extends StatelessWidget {
 
 class _StickyHeaderGrid extends StatelessWidget {
   const _StickyHeaderGrid({
-    Key key,
-    this.index,
+    Key? key,
+    required this.index,
   }) : super(key: key);
 
   final int index;

@@ -12,7 +12,7 @@ void main() => runApp(const App());
 
 class App extends StatelessWidget {
   const App({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -26,7 +26,7 @@ class App extends StatelessWidget {
 
 class _Home extends StatelessWidget {
   const _Home({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -73,9 +73,9 @@ class _Home extends StatelessWidget {
 
 class _Item extends StatelessWidget {
   const _Item({
-    Key key,
-    @required this.text,
-    @required this.builder,
+    Key? key,
+    required this.text,
+    required this.builder,
   }) : super(key: key);
 
   final String text;

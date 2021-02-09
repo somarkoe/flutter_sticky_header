@@ -1,3 +1,7 @@
+## 0.6.0
+### Changed
+* The minimum SDK of dart.
+* All code to be null-safe.
 ## 0.5.0
 ### Changed
 * The minimum version of Flutter.
@@ -32,7 +36,7 @@
 
 ## 0.4.0
 
-* Updated SDK constraint to support new error message formats. 
+* Updated SDK constraint to support new error message formats.
 * Updated error message formats
 
 ## 0.3.4

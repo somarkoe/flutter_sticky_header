@@ -5,7 +5,7 @@ import '../common.dart';
 
 class AnimatedHeaderExample extends StatelessWidget {
   const AnimatedHeaderExample({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -24,8 +24,8 @@ class AnimatedHeaderExample extends StatelessWidget {
 
 class _StickyHeaderList extends StatelessWidget {
   const _StickyHeaderList({
-    Key key,
-    this.index,
+    Key? key,
+    required this.index,
   }) : super(key: key);
 
   final int index;
@@ -54,19 +54,19 @@ class _StickyHeaderList extends StatelessWidget {
 
 class _AnimatedHeader extends StatelessWidget {
   const _AnimatedHeader({
-    Key key,
+    Key? key,
     this.state,
-    this.index,
+    required this.index,
   }) : super(key: key);
 
   final int index;
-  final SliverStickyHeaderState state;
+  final SliverStickyHeaderState? state;
 
   @override
   Widget build(BuildContext context) {
     return Header(
       index: index,
-      color: Colors.lightBlue.withOpacity(1 - state.scrollPercentage),
+      color: Colors.lightBlue.withOpacity(1 - state!.scrollPercentage),
     );
   }
 }
